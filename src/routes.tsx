@@ -7,6 +7,7 @@ import Login from './pages/Login'
 import SignInSelectAccType from './pages/SignInSelectAccType'
 import SignInClient from './pages/SignInClient'
 import SignInPoint from './pages/SignInPoint'
+import SignInPending from './pages/SignInPending'
 import Dashboard from './pages/Dashboard'
 
 const AppStack = createStackNavigator()
@@ -27,6 +28,7 @@ const Routes = () => {
         <AppStack.Screen name="SignInSelectAccType" component={SignInSelectAccType} />
         <AppStack.Screen name="SignInClient" component={SignInClient} />
         <AppStack.Screen name="SignInPoint" component={SignInPoint} />
+        <AppStack.Screen name="SignInPending" component={SignInPending} />
         <AppStack.Screen name="Dashboard" component={Dashboard} />
       </AppStack.Navigator>
     </NavigationContainer>
