@@ -1,12 +1,15 @@
-import styled from 'styled-components/native'
+import styled from "styled-components/native";
 
-export const Container = styled.View`
+export const Container = styled.KeyboardAvoidingView`
   justify-content: center;
   align-items: center;
-  flex: 1
+  flex: 1;
 `;
 
-export const Title = styled.Text`
-  color: #606;
-  font-size: 20px
+export const ViewButton = styled.View`
+  margin-top: 40px;
+`;
+
+export const TestView = styled.View`
+  margin-top: 20px;
 `;
