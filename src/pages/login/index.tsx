@@ -1,11 +1,13 @@
-import React, { useState } from "react";
-import {  KeyboardAvoidingView,  Platform } from "react-native";
+import React from "react";
+import {  KeyboardAvoidingView,  Platform, View, TouchableOpacity } from "react-native";
+import { AntDesign as ReturnIcon } from '@expo/vector-icons'
 import { Container, ViewButton, TestView } from './styles';
 import Ambev from '../../assets/logo.png'
 
 import { RedBall, Logo, Title } from '../../components/Logo/styles';
 import { Input, Label } from '../../components/Input/styles';
 import { styles, TextButton } from '../../components/Button/styles';
+import { returnButton } from '../../components/ReturnButton/styles';
 
 import { RectButton } from 'react-native-gesture-handler';
 import { useNavigation } from '@react-navigation/native';
@@ -17,9 +19,18 @@ const Login: React.FC = () => {
     navigation.navigate('Dashboard')
   }
 
+  function handleNavigateBack() {
+    navigation.navigate('Home')
+  }
+
   return (
     <Container>
       <RedBall></RedBall>
+      <View style={returnButton.ReturnButton}>
+        <TouchableOpacity onPress={handleNavigateBack}>
+          <ReturnIcon name="left" size={24} color="white" />
+        </TouchableOpacity>
+      </View>
       <Logo source={Ambev} resizeMode="center" />
       <TestView>
         <Title>Login</Title>

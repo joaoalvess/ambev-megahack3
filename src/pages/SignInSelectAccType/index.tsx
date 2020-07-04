@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { Container, SelectText, ViewButton } from './styles';
-import { Picker } from "react-native";
+import { Picker, TouchableOpacity, View } from "react-native";
 import Ambev from '../../assets/logo.png'
+import { AntDesign as ReturnIcon } from '@expo/vector-icons'
 
 import { RedBall, Logo } from '../../components/Logo/styles';
 import { styles, TextButton } from '../../components/Button/styles';
+import { returnButton } from '../../components/ReturnButton/styles';
 
 import { RectButton } from 'react-native-gesture-handler';
 import { useNavigation } from '@react-navigation/native';
@@ -22,9 +24,18 @@ function SignInSelectAccType() {
     }
   }
 
+  function handleNavigateBack() {
+    navigation.goBack()
+  }
+
   return (
     <Container>
       <RedBall></RedBall>
+      <View style={returnButton.ReturnButton}>
+        <TouchableOpacity onPress={handleNavigateBack}>
+          <ReturnIcon name="left" size={24} color="white" />
+        </TouchableOpacity>
+      </View>
       <Logo source={Ambev} resizeMode="center" />
       <SelectText>Selecione seu tipo de Conta.</SelectText>
       <Picker

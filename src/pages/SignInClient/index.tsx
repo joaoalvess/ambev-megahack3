@@ -1,21 +1,37 @@
-import React, { useState } from "react";
-import { CheckBox, Text, StyleSheet, View, KeyboardAvoidingView,  Platform } from "react-native";
+import React from "react";
+import { CheckBox, KeyboardAvoidingView, Platform, StyleSheet, Text, View, TouchableOpacity } from "react-native";
 import { Container, ViewButton } from './styles';
-import Ambev from '../../assets/logo.png'
+import Ambev from '../../assets/logo.png';
+import { AntDesign as ReturnIcon } from '@expo/vector-icons'
 
-import { RedBall, Logo, Title } from '../../components/Logo/styles';
-import { Input, Label, Form } from '../../components/Input/styles';
+import { Logo, RedBall, Title } from '../../components/Logo/styles';
+import { Input, Label } from '../../components/Input/styles';
 import { styles, TextButton } from '../../components/Button/styles';
+import { returnButton } from '../../components/ReturnButton/styles';
 
 import { RectButton } from 'react-native-gesture-handler';
-import { useNavigation } from '@react-navigation/native';
+import { useNavigation } from '@react-navigation/native'
 
 const SignInClient: React.FC = () => {
   const [checked, setChecked] = React.useState(false);
+  const navigation = useNavigation()
+
+  function handleNavigateToLogin() {
+    navigation.navigate('Login')
+  }
+
+  function handleNavigateBack() {
+    navigation.goBack()
+  }
 
   return (
     <Container>
       <RedBall></RedBall>
+      <View style={returnButton.ReturnButton}>
+        <TouchableOpacity onPress={handleNavigateBack}>
+          <ReturnIcon name="left" size={24} color="white" />
+        </TouchableOpacity>
+      </View>
       <Logo source={Ambev} resizeMode="center" />
       <Title>Cadastro</Title>
       <KeyboardAvoidingView enabled={Platform.OS === 'ios'} behavior="padding">
@@ -50,6 +66,7 @@ const SignInClient: React.FC = () => {
       <ViewButton>
       <RectButton 
         style={styles.button}
+        onPress={handleNavigateToLogin}
       >
         <TextButton>Criar Conta</TextButton>
       </RectButton>
