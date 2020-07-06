@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { CheckBox, KeyboardAvoidingView, Platform, StyleSheet, Text, View, TouchableOpacity } from "react-native";
 import { Container, ViewButton } from './styles';
 import Ambev from '../../assets/logo.png';
@@ -8,6 +8,7 @@ import { Logo, RedBall, Title } from '../../components/Logo/styles';
 import { Input, Label } from '../../components/Input/styles';
 import { styles, TextButton } from '../../components/Button/styles';
 import { returnButton } from '../../components/ReturnButton/styles';
+import api from '../../services/api';
 
 import { RectButton } from 'react-native-gesture-handler';
 import { useNavigation } from '@react-navigation/native'
@@ -16,8 +17,8 @@ const SignInClient: React.FC = () => {
   const [checked, setChecked] = React.useState(false);
   const navigation = useNavigation()
 
-  function handleNavigateToLogin() {
-    navigation.navigate('Login')
+  function handleNavigateToLogin() {    
+    navigation.navigate('Login');
   }
 
   function handleNavigateBack() {
@@ -39,6 +40,7 @@ const SignInClient: React.FC = () => {
         <Input 
           placeholder="seu nome"
           autoCorrect={false}
+          
         />
         <Label>E-MAIL *</Label>
         <Input 
@@ -53,6 +55,7 @@ const SignInClient: React.FC = () => {
           autoCapitalize="none"
           autoCorrect={false}
           secureTextEntry={true}
+          
         />
         <View style={styled.checkboxContainer}>
           <CheckBox

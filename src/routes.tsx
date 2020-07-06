@@ -9,6 +9,10 @@ import SignInClient from './pages/SignInClient'
 import SignInPoint from './pages/SignInPoint'
 import SignInPending from './pages/SignInPending'
 import Dashboard from './pages/Dashboard'
+import Reservation from './pages/Reservation'
+import Gifts from './pages/Gifts'
+import Detail from './pages/Detail'
+import Profile from './pages/Profile'
 
 const AppStack = createStackNavigator()
 
@@ -19,7 +23,7 @@ const Routes = () => {
         headerMode="none"
         screenOptions={{
           cardStyle: {
-            backgroundColor: '#d5d5d5'
+            backgroundColor: '#AA0D2B'
           }
         }}
       >
@@ -30,6 +34,10 @@ const Routes = () => {
         <AppStack.Screen name="SignInPoint" component={SignInPoint} />
         <AppStack.Screen name="SignInPending" component={SignInPending} />
         <AppStack.Screen name="Dashboard" component={Dashboard} />
+        <AppStack.Screen name="Reservation" component={Reservation} />
+        <AppStack.Screen name="Gifts" component={Gifts} />
+        <AppStack.Screen name="Detail" component={Detail} />
+        <AppStack.Screen name="Profile" component={Profile} />
       </AppStack.Navigator>
     </NavigationContainer>
   )

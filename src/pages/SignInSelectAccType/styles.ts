@@ -4,6 +4,7 @@ export const Container = styled.View`
   justify-content: center;
   align-items: center;
   flex: 1;
+  background-color: #f4f4f5;
 `;
 
 export const SelectText = styled.Text`
