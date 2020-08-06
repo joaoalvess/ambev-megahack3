@@ -1,11 +1,11 @@
 <h1 align="center">
-    <img alt="photo" src="./src/assets/camera.png" width="200" height="200" />
+    <img alt="photo" src="./src/assets/logo oti.png" width="200" height="200" />
     <br>
-    Kitket Photos
+    Ambo
 </h1>
 
 <h4 align="center">
-  Web storage and photo sharing
+  Locate the ambev bar closest to you and book your reservation.
 </h4>
 <p align="center">
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/joaoalvess/ambev-megahack3.svg">
@@ -71,7 +71,7 @@ $ yarn start
 ```
 
 ## :memo: License
-This project is under the MIT license. See the [LICENSE](https://github.com/joaoalvess/kitketphotos/blob/master/LICENSE) for more information.
+This project is under the MIT license. See the [LICENSE](https://github.com/joaoalvess/ambev-megahack3/blob/master/LICENSE) for more information.
 
 ---
 
