@@ -35,18 +35,21 @@
 
 <p align="center">
   <img alt="App Demo" src="https://media.giphy.com/media/JR7HJFWkNAXXJWEGIf/giphy.gif">
-  <img alt="App Demo" src="https://media.giphy.com/media/USVY45KJoDIYDaJavR/giphy.gif">
+  <img alt="App Demo" src="https://media.giphy.com/media/f8hvQkBghT8yc7IIrz/giphy.gif">
 </p>
 
 ## :rocket: Technologies
 
 This project was developed with the following technologies:
 
+-  [Typescript](https://www.typescriptlang.org)
+-  [Expo](https://expo.io)
 -  [React](https://pt-br.reactjs.org)
--  [Firebase](https://firebase.google.com/?hl=pt-br)
--  [React-router-dom](https://reactrouter.com/web/guides/quick-start)
--  [@material-ui/icons](https://material-ui.com/pt/components/material-icons/)
--  [React-copy-to-clipboard](https://www.npmjs.com/package/react-copy-to-clipboard)
+-  [React Native](https://reactnative.dev)
+-  [React Navigation](https://reactnavigation.org)
+-  [Styled Components](https://styled-components.com)
+-  [Axios](https://github.com/axios/axios)
+-  [React Native Maps](https://github.com/react-native-community/react-native-maps)
 -  [VS Code][vc] with [EditorConfig][vceditconfig] and [ESLint][vceslint]
 
 ## :information_source: How To Use
