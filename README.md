@@ -1,7 +1,6 @@
 <h1 align="center">
-    <img alt="photo" src="./src/assets/logo oti.png" width="200" height="200" />
+    <img alt="photo" src="./src/assets/logo oti.png" width="250" height="200" />
     <br>
-    Ambo
 </h1>
 
 <h4 align="center">
