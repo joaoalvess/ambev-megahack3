@@ -23,7 +23,7 @@
     <img alt="Repository issues" src="https://img.shields.io/github/issues/joaoalvess/ambev-megahack3.svg">
   </a>
 
-  <img alt="GitHub" src="https://img.shields.io/github/license/joaoalvess/ambev-megahack3.svg">
+  <img alt="GitHub" src="https://img.shields.io/github/license/joaoalvess/kitketphotos.svg">
 </p>
 
 <p align="center">
