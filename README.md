@@ -4,7 +4,7 @@
 </h1>
 
 <h4 align="center">
-  Locate the ambev bar closest to you and book your reservation.
+  🍺 Locate the ambev bar closest to you and book your reservation.
 </h4>
 <p align="center">
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/joaoalvess/ambev-megahack3.svg">
